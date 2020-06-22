@@ -41,16 +41,45 @@ a {
 
 /* Remove blue accent border */
 .wy-side-nav-search input[type="text"] {
-  border-color: rgb(204, 204, 204);
+  border-color: #ccc;
 }
 
-/* Remove sidebar TOC link colors and hover states */
-.wy-menu-vertical a, 
-.wy-menu-vertical a:hover,
-.wy-menu-vertical li.on a:hover,
-.wy-menu-vertical li.current > a:hover {
-  color: black;
-  background: none;
+.wy-menu-vertical header,
+.wy-menu-vertical p.caption,
+.wy-menu-vertical a {
+  font-size: 1rem;
+}
+
+.wy-menu-vertical li ul li a {
+  font-weight: 300;
+}
+
+/* Remove sidebar TOC link colors, hover states, and borders */
+.wy-menu-vertical a {
+  color: var(--text-color);
+  background: none !important;
+}
+
+.wy-menu-vertical a:hover {
+  color: var(--link-color) !important;
+  background: none !important;
+}
+
+.wy-menu-vertical li.current {
+  background: none !important;
+}
+
+.wy-menu-vertical li.current a {
+  border-right: none;
+}
+
+.wy-menu-vertical li.current > a {
+  border-right: 2px solid var(--link-color);
+}
+
+.wy-menu-vertical li.toctree-l1.current > a {
+  border-top: none;
+  border-bottom: none;
 }
 
 /* Remove sidebar TOC heading/caption color */
