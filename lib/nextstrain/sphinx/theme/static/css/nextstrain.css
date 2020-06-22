@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "theme.css"; /* From sphinx_rtd_theme */
 
+html {
+  --text-color: black;
+  --heading-color: #404040;
+  --link-color: #5097ba;
+  --sidebar-background-color: #f2f2f2;
+}
+
 body {
   font-family: Lato, 'Helvetica Neue', sans-serif;
   font-weight: 300;
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6, legend, .rst-content .toctree-wrapper p.caption {
   font-family: Lato, 'Helvetica Neue', sans-serif;
   font-weight: 500;
+  color: var(--heading-color);
 }
 
 a {
-  color: #5097BA;
+  color: var(--link-color);
 }
 
 /* Sidebar */
 .wy-nav-side {
-  background: #f2f2f2;
+  background: var(--sidebar-background-color);
 }
 
-/* Remove blue accent border */
+/* Project name and version */
 .wy-side-nav-search > a {
-  color: #404040;
+  color: var(--heading-color);
 }
 
 .wy-side-nav-search > a.project-name {
@@ -30,6 +39,7 @@ a {
   font-weight: 500;
 }
 
+/* Remove blue accent border */
 .wy-side-nav-search input[type="text"] {
   border-color: rgb(204, 204, 204);
 }
@@ -45,5 +55,5 @@ a {
 
 /* Remove sidebar TOC heading/caption color */
 .wy-menu-vertical p.caption {
-  color: #666;
+  color: var(--heading-color);
 }
