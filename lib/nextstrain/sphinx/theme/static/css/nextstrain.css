@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "theme.css"; /* From sphinx_rtd_theme */
 
 html {
@@ -22,6 +23,20 @@ h1, h2, h3, h4, h5, h6, legend, .rst-content .toctree-wrapper p.caption {
 
 a {
   color: var(--link-color);
+}
+
+/* Monospace typography */
+footer span.commit code,
+.rst-content pre.literal-block,
+.rst-content div[class^='highlight'] pre,
+.rst-content .linenodiv pre,
+.rst-content tt,
+.rst-content code,
+.rst-content pre,
+.rst-content kbd,
+.rst-content samp {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
 }
 
 /* Sidebar */
