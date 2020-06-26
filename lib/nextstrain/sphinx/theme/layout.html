@@ -6,6 +6,8 @@
   html_logo configuration option (template variable "logo" below) can't be set
   by the theme *and also* can't refer to a theme-provided file when set by the
   doc project's conf.py.
+
+  We also adjust the rendering of the project name to remove the home icon.
 #}
 {% block sidebartitle %}
 {% set logo = logo if logo else 'nextstrain-logo.svg' if theme_logo else '' %}
@@ -17,7 +19,7 @@
 {% endif %}
 
 {% if not theme_logo_only %}
-<a href="{{ pathto(master_doc) }}" class="icon icon-home project-name" alt="{{ _("Documentation Home") }}"> {{ project }}</a>
+<a href="{{ pathto(master_doc) }}" class="project-name" alt="{{ _("Documentation Home") }}"> {{ project }}</a>
 {% endif %}
 
 
