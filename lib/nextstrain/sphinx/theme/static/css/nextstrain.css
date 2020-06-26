@@ -47,11 +47,21 @@ footer span.commit code,
 /* Project name and version */
 .wy-side-nav-search > a {
   color: var(--heading-color);
+  margin-bottom: 0;
 }
 
 .wy-side-nav-search > a.project-name {
   font-size: 1.5rem;
   font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.wy-side-nav-search > div.version {
+  color: var(--heading-color);
+}
+
+.wy-side-nav-search > a.project-name + div.version {
+  margin-top: -0.8rem;
 }
 
 /* Remove blue accent border */
