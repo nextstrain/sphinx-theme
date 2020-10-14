@@ -175,3 +175,72 @@ footer span.commit code,
   background-color: var(--text-color) !important;
   color: var(--content-background-color) !important;
 }
+
+/* Footer styles. Largely chosen to mimic the previous rendering of the docs. See
+https://github.com/nextstrain/nextstrain.org/blob/b1e09e57e91ed0c9343e1cd3104877ec3c5344a4/static-site/src/components/Footer/index.jsx
+*/
+footer {
+  color: var(--text-color);
+}
+footer div {
+  margin: 20px 0px 0px 0px;
+}
+footer .footer-small-text {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+footer .copyright {
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-align: center;
+}
+footer div.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+}
+footer a.logo {
+  /* Using flex here (to vertically align the child img) causes aspect-ratio issues */
+  flex-basis: 120px;
+  margin: 10px auto 10px auto;
+  text-align: center;
+}
+footer span.logo {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+footer img.logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+}
+footer p.avatar {
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 16px 0px -10px 0px;
+}
+footer div.avatar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 2.5
+}
+footer div.avatar > span {
+  white-space: nowrap;
+}
+footer div.avatar > span > a {
+  font-weight: 300;
+  color: #333;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+footer div.avatar > span > a > img {
+  margin-left: 5px;
+  margin-right: 4px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
