@@ -46,8 +46,8 @@ Releasing
 3. Add a commit which describes the changes from the previous version to ``CHANGES.md`` and updates the version number in ``lib/nextstrain/sphinx/theme/VERSION``.
 4. Tag this commit with the version number, e.g. ``git tag -a 2020.4 -m "version 2020.4"``.
 5. Push the commit and the tag to the ``main`` branch.
-6. [Generate the source and binary distributions with setup.py](https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives).
-7. [Upload the two files from step 3 to PyPI with twine](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives).
+6. `Generate the source and binary distributions with setup.py <https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives>`__.
+7. `Upload the two files from step 3 to PyPI with twine <https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives>`__.
 
 .. _Sphinx theme: https://www.sphinx-doc.org/en/master/theming.html
 .. _Read The Docs: https://readthedocs.org
