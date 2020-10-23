@@ -3,26 +3,36 @@
 @import "theme.css"; /* From sphinx_rtd_theme */
 
 html {
-  --text-color: black;
+  --text-color: #24292e;
   --heading-color: #404040;
   --link-color: #5097ba;
   --sidebar-background-color: #f2f2f2;
+  --content-background-color: #ffffff;
 }
 
 body {
   font-family: Lato, 'Helvetica Neue', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-color);
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6, legend, .rst-content .toctree-wrapper p.caption {
   font-family: Lato, 'Helvetica Neue', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--heading-color);
+}
+
+p {
+  line-height: inherit;
 }
 
 a {
   color: var(--link-color);
+}
+/* underlign lins on hover */
+a:hover {
+  text-decoration: underline;
 }
 
 /* Monospace typography */
@@ -39,9 +49,32 @@ footer span.commit code,
   font-size: 0.8rem;
 }
 
+/* Inline (backticks) code inspired by docusaurus (which Auspice used previously) */
+.rst-content code.literal,
+.rst-content tt.literal {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 3.2px 6.4px;
+}
+
 /* Sidebar */
 .wy-nav-side {
   background: var(--sidebar-background-color);
+}
+
+/* main content section */
+.wy-nav-content {
+  background: var(--content-background-color);
+}
+
+/* don't change the background for the area on the RHS of the main content */
+.wy-nav-content-wrap {
+  background: inherit;
 }
 
 /* Project name and version */
@@ -110,4 +143,31 @@ footer span.commit code,
 /* Remove sidebar TOC heading/caption color */
 .wy-menu-vertical p.caption {
   color: var(--heading-color);
+}
+
+/* the buttons (previous / next) at the bottom of each doc page */
+.wy-nav-content a.btn {
+  border: 1px solid #24292e;
+  border-radius: 3px;
+  color: inherit;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 10px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: background .3s,color .3s;
+  box-shadow: none;
+  font-family: inherit;
+  background-color: inherit;
+}
+/* following needs !important to override sphynx CSS which itself uses !important */
+.wy-nav-content a.btn-neutral {
+  background-color: var(--content-background-color) !important;
+  color: var(--text-color) !important;
+}
+.wy-nav-content a.btn-neutral:hover {
+  background-color: var(--text-color) !important;
+  color: var(--content-background-color) !important;
 }
