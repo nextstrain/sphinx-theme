@@ -170,9 +170,6 @@ footer span.commit code,
 .wy-nav-content a.btn-neutral:hover {
   background-color: var(--text-color) !important;
   color: var(--content-background-color) !important;
-<<<<<<< HEAD
-}
-=======
 }
 
 /* Footer styles. Largely chosen to mimic the previous rendering of the docs. See
@@ -243,4 +240,3 @@ footer div.avatar > span > a > img {
   border-radius: 50%;
   vertical-align: middle;
 }
->>>>>>> footer
