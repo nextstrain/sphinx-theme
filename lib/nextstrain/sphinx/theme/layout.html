@@ -8,7 +8,8 @@
   doc project's conf.py.
 
   `theme_logo_only` is set via a project's conf.py -> `html_theme_options` ->
-  `logo_only` value (default: false).
+  `logo_only` value (default: false). In the context of Nextstrain we use this
+  to determine whether or not to display the subproject name, version
 
   We also adjust the rendering of the project name to remove the home icon.
 #}
@@ -23,20 +24,31 @@
 {% endif %}
 
 {% if not theme_logo_only %}
-<a href="{{ pathto(master_doc) }}" class="project-name" alt="{{ _("Documentation Home") }}"> {{ project }}</a>
-{% endif %}
+  <div class="subproject">
+    <a href="{{ pathto(master_doc) }}" class="project-name" alt="{{ _("Documentation Home") }}">
+      {{ project }}
+    </a>
 
+    {#
+      NOTE the version only works on RTD (not locally) as the variables `nav_version` and
+      `current_version` don't seem to be set on a local build.
+    #}
+    {%- set nav_version = version %}
+    {% if READTHEDOCS and current_version %}
+      {%- set nav_version = current_version %}
+    {% endif %}
+    {% if nav_version %}
+      <span>
+        version: {{ nav_version }}
+      </span>
+    {% endif %}
 
-{% if theme_display_version %}
-  {%- set nav_version = version %}
-  {% if READTHEDOCS and current_version %}
-    {%- set nav_version = current_version %}
-  {% endif %}
-  {% if nav_version %}
-    <div class="version">
-      {{ nav_version }}
-    </div>
-  {% endif %}
+  </div>
+
+  <div>
+    (<a href="https://docs.nextstrain.org">Click here</a> to return to the main nextstrain docs)
+  </div>
+
 {% endif %}
 
 {% include "searchbox.html" %}
