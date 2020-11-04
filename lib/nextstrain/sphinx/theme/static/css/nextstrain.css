@@ -77,24 +77,28 @@ footer span.commit code,
   background: inherit;
 }
 
-/* Project name and version */
-.wy-side-nav-search > a {
-  color: var(--heading-color);
-  margin-bottom: 0;
+/* Sub-project name, version (optional) and link back to the main docs */
+.wy-side-nav-search > div.subproject {
+  margin-top: -1rem;
 }
-
-.wy-side-nav-search > a.project-name {
+.wy-side-nav-search > div.subproject > a { /* subproject name */
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 0.8rem;
-}
-
-.wy-side-nav-search > div.version {
   color: var(--heading-color);
 }
-
-.wy-side-nav-search > a.project-name + div.version {
-  margin-top: -0.8rem;
+.wy-side-nav-search > div.subproject > span { /* version name */
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--heading-color);
+}
+.wy-side-nav-search > div.subproject + div { /* go back to main docs link */
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1rem;
+  color: var(--heading-color);
+  margin-bottom: 1.2rem;
 }
 
 /* Remove blue accent border */
@@ -170,9 +174,6 @@ footer span.commit code,
 .wy-nav-content a.btn-neutral:hover {
   background-color: var(--text-color) !important;
   color: var(--content-background-color) !important;
-<<<<<<< HEAD
-}
-=======
 }
 
 /* Footer styles. Largely chosen to mimic the previous rendering of the docs. See
@@ -243,4 +244,3 @@ footer div.avatar > span > a > img {
   border-radius: 50%;
   vertical-align: middle;
 }
->>>>>>> footer
