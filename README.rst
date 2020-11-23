@@ -19,7 +19,7 @@ your ``conf.py`` file:
 
 .. code:: python
 
-    html_theme = "sphinx_rtd_theme"
+    html_theme = "nextstrain-sphinx-theme"
 
 This theme is based on sphinx_rtd_theme_ and accepts all of the same
 `configuration options`_ settable via ``html_theme_option``.  One additional
