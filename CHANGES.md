@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2020.6 (23 November 2020)
+
+Restores monospace font for inline literals.
+
 ## 2020.5 (03 November 2020)
 
 Includes sidebar improvements with links to nextstrain.org and the main docs.nextstrain.org; see https://github.com/nextstrain/sphinx-theme/pull/4.
