@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2021.1 (19 May 2021)
+
+Fixes a link under the Open Science Prize logo.
+
 ## 2020.6 (23 November 2020)
 
 Restores monospace font for inline literals.
