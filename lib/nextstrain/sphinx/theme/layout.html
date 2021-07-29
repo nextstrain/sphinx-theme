@@ -1,3 +1,14 @@
+{#
+  Use our theme's favicon by default.  We do it here layout.html since the
+  "html_favicon" configuration option unfortunately can't be set by the theme
+  directly.  The "favicon" variable is used by Sphinx versions < 4;
+  "favicon_url" by newer versions.
+#}
+{% if not favicon %}
+{%   set favicon     = 'favicon.ico' %}
+{%   set favicon_url = pathto('_static/' + favicon, 1) %}
+{% endif %}
+
 {% extends "sphinx_rtd_theme/layout.html" %}
 {#
   Most of this block is copied from sphinx_rtd_theme version 0.5.0-1-gaa71fd6.
