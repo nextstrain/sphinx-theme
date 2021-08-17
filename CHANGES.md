@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2021.2 (17 August 2021)
+
+Defaults favicon to Nextstrain logo.
+
 ## 2021.1 (19 May 2021)
 
 Fixes a link under the Open Science Prize logo.
