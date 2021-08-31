@@ -205,6 +205,9 @@ footer a.logo {
   margin: 10px auto 10px auto;
   text-align: center;
 }
+footer a.logo:hover {
+  text-decoration: none;
+}
 footer span.logo {
   display: inline-block;
   height: 100%;
