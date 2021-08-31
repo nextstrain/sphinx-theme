@@ -10,7 +10,7 @@
 {% set show_copyright = false %}
 
 {#
-  Footer design largely replicates https://github.com/nextstrain/nextstrain.org/blob/b1e09e57e91ed0c9343e1cd3104877ec3c5344a4/static-site/src/components/Footer/index.jsx
+  Footer design largely replicates https://github.com/nextstrain/nextstrain.org/raw/0c3222d/static-site/src/components/Footer/index.jsx
 #}
 
 {#
@@ -29,132 +29,35 @@
 
   <p class="avatar">Nextstrain is built by</p>
   <div class="avatar">
-
+    {% macro TeamMember(name, image, link) %}
     <span>
-      <a href="http://bedford.io/team/trevor-bedford/">
-        <img src="{{ pathto('_static/team/trevor-bedford.jpg', 1) }}" width="32"/>
-        Trevor Bedford
-      </a>
+      {% if link %}<a href="{{ link |e }}">{% endif %}
+        <img src="{{ pathto('_static/team/' + image, 1) }}" width="32"/>
+        {{ name |e }}
+      {% if link %}</a>{% endif %}
     </span>
-    ,
-    <span>
-      <a href="https://neherlab.org/richard-neher.html">
-        <img src="{{ pathto('_static/team/richard-neher.jpg', 1) }}" width="32"/>
-        Richard Neher
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/james-hadfield/">
-        <img src="{{ pathto('_static/team/james-hadfield.jpg', 1) }}" width="32"/>
-        James Hadfield
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://emmahodcroft.com/">
-        <img src="{{ pathto('_static/team/emma-hodcroft.jpg', 1) }}" width="32"/>
-        Emma Hodcroft
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="https://bedford.io/team/thomas-sibley/">
-        <img src="{{ pathto('_static/team/thomas-sibley.jpg', 1) }}" width="32"/>
-        Thomas Sibley
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/john-huddleston/">
-        <img src="{{ pathto('_static/team/john-huddleston.jpg', 1) }}" width="32"/>
-        John Huddleston
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/jover-lee/">
-        <img src="{{ pathto('_static/team/jover-lee.jpg', 1) }}" width="32"/>
-        Jover Lee
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/kairsten-fay/">
-        <img src="{{ pathto('_static/team/kairsten-fay.jpg', 1) }}" width="32"/>
-        Kairsten Fay
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/sidney-bell/">
-        <img src="{{ pathto('_static/team/sidney-bell.jpg', 1) }}" width="32"/>
-        Sidney Bell
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://www.colinmegill.com/">
-        <img src="{{ pathto('_static/team/colin-megill.jpg', 1) }}" width="32"/>
-        Colin Megill
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/barney-potter/">
-        <img src="{{ pathto('_static/team/barney-potter.jpg', 1) }}" width="32"/>
-        Barney Potter
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="https://neherlab.org/pavel-sagulenko.html">
-        <img src="{{ pathto('_static/team/pavel-sagulenko.jpg', 1) }}" width="32"/>
-        Pavel Sagulenko
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/charlton-callender/">
-        <img src="{{ pathto('_static/team/charlton-callender.jpg', 1) }}" width="32"/>
-        Charlton Callender
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/misja-ilcisin/">
-        <img src="{{ pathto('_static/team/misja-ilcisin.jpg', 1) }}" width="32"/>
-        Misja Ilcisin
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/louise-moncla/">
-        <img src="{{ pathto('_static/team/louise-moncla.jpg', 1) }}" width="32"/>
-        Louise Moncla
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://bedford.io/team/allison-black/">
-        <img src="{{ pathto('_static/team/allison-black.jpg', 1) }}" width="32"/>
-        Allison Black
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://grubaughlab.com/team/anderson-brito/">
-        <img src="{{ pathto('_static/team/anderson-brito.jpg', 1) }}" width="32"/>
-        Anderson Brito
-      </a>
-    </span>
-    ,
-    <span>
-      <a href="http://grubaughlab.com/team/nathan-grubaugh/">
-        <img src="{{ pathto('_static/team/nate-grubaugh.jpg', 1) }}" width="32"/>
-        Nate Grubaugh
-      </a>
-    </span>
+    {% endmacro %}
+    {{ TeamMember(name="Trevor Bedford", image="trevor-bedford.jpg", link="http://bedford.io/team/trevor-bedford/") }},
+    {{ TeamMember(name="Richard Neher", image="richard-neher.jpg", link="https://neherlab.org/richard-neher.html") }},
+    {{ TeamMember(name="James Hadfield", image="james-hadfield.jpg", link="http://bedford.io/team/james-hadfield/") }},
+    {{ TeamMember(name="Emma Hodcroft", image="emma-hodcroft.jpg", link="http://emmahodcroft.com/") }},
+    {{ TeamMember(name="Thomas Sibley", image="thomas-sibley.jpg", link="https://bedford.io/team/thomas-sibley/") }},
+    {{ TeamMember(name="John Huddleston", image="john-huddleston.jpg", link="http://bedford.io/team/john-huddleston/") }},
+    {{ TeamMember(name="Ivan Aksamentov", image="ivan-aksamentov.jpg", link="https://neherlab.org/ivan-aksamentov.html") }},
+    {{ TeamMember(name="Jover Lee", image="jover-lee.jpg", link="http://bedford.io/team/jover-lee/") }},
+    {{ TeamMember(name="Kairsten Fay", image="kairsten-fay.jpg", link="http://bedford.io/team/kairsten-fay/") }},
+    {{ TeamMember(name="Moira Zuber", image="moira-zuber.jpg") }},
+    {{ TeamMember(name="Eli Harkins", image="eli-harkins.jpg", link="https://bedford.io/team/eli-harkins/") }},
+    {{ TeamMember(name="Misja Ilcisin", image="misja-ilcisin.jpg", link="http://bedford.io/team/misja-ilcisin/") }},
+    {{ TeamMember(name="Cassia Wagner", image="cassia-wagner.jpg", link="https://bedford.io/team/cassia-wagner/") }},
+    {{ TeamMember(name="Louise Moncla", image="louise-moncla.jpg", link="http://bedford.io/team/louise-moncla/") }},
+    {{ TeamMember(name="Allison Black", image="allison-black.jpg", link="http://bedford.io/team/allison-black/") }},
+    {{ TeamMember(name="Sidney Bell", image="sidney-bell.jpg", link="http://bedford.io/team/sidney-bell/") }},
+    {{ TeamMember(name="Miguel Parades", image="miguel-parades.jpg", link="https://bedford.io/team/miguel-parades/") }},
+    {{ TeamMember(name="Colin Megill", image="colin-megill.jpg", link="http://www.colinmegill.com/") }},
+    {{ TeamMember(name="Barney Potter", image="barney-potter.jpg", link="http://bedford.io/team/barney-potter/") }},
+    {{ TeamMember(name="Pavel Sagulenko", image="pavel-sagulenko.jpg", link="https://neherlab.org/pavel-sagulenko.html") }},
+    {{ TeamMember(name="Charlton Callender", image="charlton-callender.jpg", link="http://bedford.io/team/charlton-callender/") }}
   </div>
 
 
@@ -167,7 +70,7 @@
   <div class="footer-small-text">
     This work is made possible by the open sharing of genetic data by research groups from all over the world.
     We gratefully acknowledge their contributions.
-    Special thanks to Kristian Andersen, David Blazes, Peter Bogner, Matt Cotten, Ana Crisan, Gytis Dudas, Vivien Dugan, Karl Erlandson, Nuno Faria, Jennifer Gardy, Becky Kondor, Dylan George, Ian Goodfellow, Betz Halloran, Christian Happi, Jeff Joy, Paul Kellam, Philippe Lemey, Nick Loman, Sebastian Maurer-Stroh, Oliver Pybus, Andrew Rambaut, Colin Russell, Pardis Sabeti, Katherine Siddle, Kristof Theys, Dave Wentworth, Shirlee Wohl and Nathan Yozwiak for comments, suggestions and data sharing.
+    Special thanks to Kristian Andersen, Josh Batson, David Blazes, Jesse Bloom, Peter Bogner, Anderson Brito, Matt Cotten, Ana Crisan, Tulio de Oliveira, Gytis Dudas, Vivien Dugan, Karl Erlandson, Nuno Faria, Jennifer Gardy, Nate Grubaugh, Becky Kondor, Dylan George, Ian Goodfellow, Betz Halloran, Christian Happi, Jeff Joy, Paul Kellam, Philippe Lemey, Nick Loman, Duncan MacCannell, Erick Matsen, Sebastian Maurer-Stroh, Placide Mbala, Danny Park, Oliver Pybus, Andrew Rambaut, Colin Russell, Pardis Sabeti, Katherine Siddle, Kristof Theys, Dave Wentworth, Shirlee Wohl and Cecile Viboud for comments, suggestions and data sharing.
   </div>
 
   <hr/>

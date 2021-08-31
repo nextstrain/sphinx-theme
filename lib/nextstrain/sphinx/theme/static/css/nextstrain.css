@@ -230,16 +230,16 @@ footer div.avatar {
   justify-content: center;
   line-height: 2.5
 }
-footer div.avatar > span {
-  white-space: nowrap;
+footer div.avatar a {
+  color: var(--text-color);
 }
-footer div.avatar > span > a {
+footer div.avatar span {
+  white-space: nowrap;
   font-weight: 300;
-  color: #333;
   margin-left: 2px;
   margin-right: 2px;
 }
-footer div.avatar > span > a > img {
+footer div.avatar img {
   margin-left: 5px;
   margin-right: 4px;
   border-radius: 50%;
