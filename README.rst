@@ -43,7 +43,7 @@ Releasing
 
 1. Make sure you have a PyPI account and access to https://pypi.org/project/nextstrain-sphinx-theme/.
 2. Make sure all your changes have been commited to the ``main`` branch.
-3. Add a commit which describes the changes from the previous version to ``CHANGES.md`` and updates the version number in ``lib/nextstrain/sphinx/theme/VERSION``.
+3. Add a commit which describes the changes from the previous version to ``CHANGES.rst`` and updates the version number in ``lib/nextstrain/sphinx/theme/VERSION``.
 4. Tag this commit with the version number, e.g. ``git tag -a 2020.4 -m "version 2020.4"``.
 5. Push the commit and tag to GitHub, e.g. ``git push origin main 2020.4``.
 6. `Generate the source and binary distributions with setup.py <https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives>`__.
