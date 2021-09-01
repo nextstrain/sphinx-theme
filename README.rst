@@ -1,4 +1,4 @@
-sphinx-nextstrain-theme
+Nextstrain Sphinx Theme
 =======================
 
 A `Sphinx theme`_ for Nextstrain's documentation, based on `Read The Docs`_'
