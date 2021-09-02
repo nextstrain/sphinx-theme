@@ -2,6 +2,18 @@
 Changelog
 =========
 
+2021.3 (2 September 2021)
+=========================
+
+The page footer was updated with the latest team members from nextstrain.org
+and a more accurate description of our software licenses.  Alt text was added
+to logos and other small tweaks were also made.
+
+External links in the TOC tree sidebar are now marked with a trailing icon.
+
+This theme now has its own documentation build, including demos of
+theme-specific styling, and previews will be built for PRs.
+
 2021.2 (17 August 2021)
 =======================
 
