@@ -2,6 +2,15 @@
 Changelog
 =========
 
+2021.4 (3 November 2021)
+=========================
+
+The titles of sidebar directives (not the navigation sidebar) now use our theme
+font (Lato) too.
+
+Updated funding sources in the footer to reflect current funding for the Basel
+team.
+
 2021.3 (2 September 2021)
 =========================
 
