@@ -78,6 +78,7 @@ footer span.commit code,
 /* Sub-project name, version (optional) and link back to the main docs */
 .wy-side-nav-search > div.subproject {
   margin-top: -1rem;
+  margin-bottom: 1.2rem;
 }
 .wy-side-nav-search > div.subproject > a { /* subproject name */
   font-size: 1.5rem;
@@ -89,14 +90,6 @@ footer span.commit code,
   font-size: 1.1rem;
   font-weight: 300;
   color: var(--heading-color);
-}
-.wy-side-nav-search > div.subproject + div { /* go back to main docs link */
-  font-style: italic;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1rem;
-  color: var(--heading-color);
-  margin-bottom: 1.2rem;
 }
 
 /* Remove blue accent border */
