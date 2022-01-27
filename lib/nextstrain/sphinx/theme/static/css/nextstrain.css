@@ -78,25 +78,18 @@ footer span.commit code,
 /* Sub-project name, version (optional) and link back to the main docs */
 .wy-side-nav-search > div.subproject {
   margin-top: -1rem;
+  margin-bottom: 1.2rem;
 }
 .wy-side-nav-search > div.subproject > a { /* subproject name */
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--heading-color);
 }
-.wy-side-nav-search > div.subproject > span { /* version name */
-  display: inline-block;
+.wy-side-nav-search > div.subproject > .version { /* version name */
+  display: block;
   font-size: 1.1rem;
   font-weight: 300;
   color: var(--heading-color);
-}
-.wy-side-nav-search > div.subproject + div { /* go back to main docs link */
-  font-style: italic;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1rem;
-  color: var(--heading-color);
-  margin-bottom: 1.2rem;
 }
 
 /* Remove blue accent border */
@@ -184,6 +177,21 @@ footer span.commit code,
   text-rendering: auto;
   margin-left: 0.2rem;
   content: "";
+}
+
+
+/* Breadcrumb separators (at top of the page) */
+.wy-breadcrumbs > li:not(:first-child):not(.wy-breadcrumbs-aside)::before {
+  display: inline-block;
+  content: "/\A0"; /* \A0 = no-break space (nbsp) */
+  padding-right: 5px;
+
+  /* The trailing space + 5px _right_ padding matches the amount of whitespace
+   * on the other side of the slash (/) the comes from the spaces between <li>s
+   * in the template and the 5px _left_ padding on <li>s.  The result is that
+   * the slash (/) is centered between the end of the previous <li>'s text and
+   * start of this <li>'s text.
+   */
 }
 
 
