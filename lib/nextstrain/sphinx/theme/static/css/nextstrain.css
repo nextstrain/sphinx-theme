@@ -85,8 +85,8 @@ footer span.commit code,
   font-weight: 500;
   color: var(--heading-color);
 }
-.wy-side-nav-search > div.subproject > span { /* version name */
-  display: inline-block;
+.wy-side-nav-search > div.subproject > .version { /* version name */
+  display: block;
   font-size: 1.1rem;
   font-weight: 300;
   color: var(--heading-color);

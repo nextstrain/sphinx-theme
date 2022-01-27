@@ -45,9 +45,15 @@
       {%- set nav_version = current_version %}
     {% endif %}
     {% if nav_version %}
-      <span>
-        version: {{ nav_version }}
-      </span>
+      <div class="version">
+        {% if nav_version == "stable" %}
+          {# don't show anything #}
+        {% elif nav_version == "latest" %}
+          development version
+        {% else %}
+          version {{ nav_version }}
+        {% endif %}
+      </div>
     {% endif %}
 
   </div>
