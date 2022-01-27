@@ -29,7 +29,7 @@ options are supported:
        Defaults to true.
 
 :logo_link: URL to use for the logo's link.  Defaults to
-            <https://nextstrain.org>.
+            <https://docs.nextstrain.org>.
 
 If your project wants to display its own logo, just set Sphinx's ``html_logo``
 to point to the image file in your Sphinx project.
