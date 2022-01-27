@@ -29,7 +29,7 @@
 {% set logo = logo if logo else 'nextstrain-logo.svg' if theme_logo else '' %}
 
 {% if logo %}
-  <a href="https://nextstrain.org">
+  <a href="{{ theme_logo_link }}">
     <img src="{{ pathto('_static/' + logo, 1) }}" class="logo" alt="{{ _('Logo') }}"/>
   </a>
 {% endif %}
