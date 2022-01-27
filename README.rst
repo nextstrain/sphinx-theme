@@ -21,15 +21,23 @@ your ``conf.py`` file:
 
     html_theme = "nextstrain-sphinx-theme"
 
-This theme is based on sphinx_rtd_theme_ and accepts all of the same
-`configuration options`_ settable via ``html_theme_option``.  Two additional
-options are supported:
+This theme is based on sphinx_rtd_theme_ and accepts most of the same
+`configuration options`_ settable via ``html_theme_option`` and a few
+additional options as well:
 
 :logo: Boolean determining if the Nextstrain logo should be displayed.
        Defaults to true.
 
 :logo_link: URL to use for the logo's link.  Defaults to
             <https://docs.nextstrain.org>.
+
+:logo_only: Ignored.  Inherited from sphinx_rtd_theme_.  Instead, the project
+            name and version info will not be displayed (thus showing only the
+            logo) when ``subproject`` is true.
+
+:subproject: Boolean determining if this is a subproject of the main Nextstrain
+             documentation project on <https://docs.nextstrain.org>.  Defaults
+             to true.
 
 If your project wants to display its own logo, just set Sphinx's ``html_logo``
 to point to the image file in your Sphinx project.

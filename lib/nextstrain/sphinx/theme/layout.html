@@ -18,10 +18,6 @@
   by the theme *and also* can't refer to a theme-provided file when set by the
   doc project's conf.py.
 
-  `theme_logo_only` is set via a project's conf.py -> `html_theme_options` ->
-  `logo_only` value (default: false). In the context of Nextstrain we use this
-  to determine whether or not to display the subproject name, version
-
   We also adjust the rendering of the project name to remove the home icon.
 #}
 {% block sidebartitle %}
@@ -34,7 +30,7 @@
   </a>
 {% endif %}
 
-{% if not theme_logo_only %}
+{% if theme_subproject %}
   <div class="subproject">
     <a href="{{ pathto(master_doc) }}" class="project-name" alt="{{ _("Documentation Home") }}">
       {{ project }}
