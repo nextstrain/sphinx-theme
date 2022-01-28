@@ -65,3 +65,8 @@ Releasing
 .. _sphinx_rtd_theme: https://github.com/readthedocs/sphinx_rtd_theme
 .. _nextstrain-sphinx-theme: https://pypi.org/project/nextstrain-sphinx-theme/
 .. _configuration options: https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
+
+Testing
+-------
+
+PR test builds are available here: https://readthedocs.org/projects/nextstrain-sphinx-theme/builds/ and usually follow the following URL path convention: https://nextstrain--17.org.readthedocs.build/projects/sphinx-theme/en/17/ where 17 is the PR number
