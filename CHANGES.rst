@@ -2,6 +2,29 @@
 Changelog
 =========
 
+2022.1 (4 February 2022)
+========================
+
+Breadcrumbs now start with the main Nextstrain doc home page and don't include
+current page title, along with a couple other small changes for clarity.
+
+The logo now links to https://docs.nextstrain.org by default instead of
+https://nextstrain.org, which feels more "right" to several members of the
+team.  A new option, ``logo_link``, allows control of the URL used for the
+logo's link if necessary (though this is unexpected for Nextstrain docs).
+
+The "Click here to return …" message is gone from subproject sidebars in favor
+of the improved breadcrumbs at the top of the page and the change to the logo'
+link.
+
+The clarity and precision of the currently displayed project version is
+improved.  "Stable" now shows the precise version (when available) and "latest"
+is described as the "development" version with the precise commit shown.
+
+The documentation versions panel added by Read the Docs now stays docked to the
+bottom of the sidebar when expanded instead of becoming unmoored and floating
+over the bottom right corner of the page.
+
 2021.4 (3 November 2021)
 =========================
 
