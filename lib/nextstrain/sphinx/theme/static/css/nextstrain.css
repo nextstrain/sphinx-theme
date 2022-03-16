@@ -195,6 +195,44 @@ footer span.commit code,
 }
 
 
+/* Tables
+ */
+.wy-nav-content-wrap .wy-nav-content .wy-table-responsive {
+  /* Tables are wrapped in a container <div> (.wy-table-responsive) to handle
+   * overflow.  Set this <div>'s width to the larger of (a) 100% of its
+   * (several levels removed) container (.wy-nav-content) or (b) the width of
+   * the viewport minus the width of the sidebar and some left-side padding.
+   * Most of the time the latter (b) will be larger, but the former (a) will be
+   * larger when the viewport is narrow and the sidebar is hidden (e.g. on a
+   * mobile device).
+   *
+   * This has the effect of allowing tables to expand rightwards out of the
+   * main content container (.wy-nav-content), which is limited to max-width:
+   * 800px for text readability.  Tables are at first allowed to overrun just
+   * the right-side content padding, but as the viewport expands wider, tables
+   * will spill out into the new blank space beyond the main content padding.
+   * Allowing tables to extend right up against the viewport edge makes a table
+   * appear cut off, which makes it clearer to the reader that expanding the
+   * viewport will reveal more of the table.  However, tables also remain
+   * horizontally scrollable as necessary to accommodate overflow.  This
+   * provides two means for seeing overflowing table content (scrolling or
+   * expanding the viewport).
+   *
+   * For reference in the calculation below:
+   *
+   *   100vw   = width of the viewport
+   *   300px   = width of .wy-nav-side and corresponding margin-left of .wy-nav-content-wrap
+   *   3.236em = padding-left of .wy-nav-content
+   *
+   * -trs, 16 March 2022
+   */
+  width: max(100%, calc(100vw - 300px - 3.236em));
+
+  /* override earlier max-width: 100% */
+  max-width: none;
+}
+
+
 /* Footer styles. Largely chosen to mimic the previous rendering of the docs. See
 https://github.com/nextstrain/nextstrain.org/blob/b1e09e57e91ed0c9343e1cd3104877ec3c5344a4/static-site/src/components/Footer/index.jsx
 */
