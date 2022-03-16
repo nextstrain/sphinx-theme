@@ -2,6 +2,21 @@
 Changelog
 =========
 
+2022.2 (16 March 2022)
+======================
+
+The styling of wide tables is now much improved.  Tables will expand to use the
+available viewport width instead of staying confined within the main content
+column.  They remain horizontally scrollable when the viewport is not wide
+enough to fully accommodate them.
+
+Demo documentation from the base theme, ``sphinx_rtd_theme``, is included in
+this theme's own documentation now, to provide comprehensive previews of
+changes.
+
+An appropriate LICENSE file is now included.  (The MIT licensing was previously
+only declared in Python distribution metadata.)
+
 2022.1 (4 February 2022)
 ========================
 
