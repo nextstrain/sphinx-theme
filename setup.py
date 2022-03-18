@@ -33,7 +33,7 @@ setup(
         ]
     },
     install_requires = [
-        'sphinx_rtd_theme'
+        'sphinx_rtd_theme >=1.0.0'
     ],
     classifiers = [
         'Framework :: Sphinx',
