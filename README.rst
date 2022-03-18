@@ -57,8 +57,14 @@ Releasing
 3. Add a commit which describes the changes from the previous version to ``CHANGES.rst`` and updates the version number in ``lib/nextstrain/sphinx/theme/VERSION``.
 4. Tag this commit with the version number, e.g. ``git tag -a 2020.4 -m "version 2020.4"``.
 5. Push the commit and tag to GitHub, e.g. ``git push origin main 2020.4``.
-6. `Generate the source and binary distributions with setup.py <https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives>`__.
-7. `Upload the two files from step 6 to PyPI with twine <https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives>`__.
+6. Publish to PyPI by invoking a GitHub Actions workflow:
+
+   1. Go to the workflow: `publish.yml <https://github.com/nextstrain/sphinx-theme/actions/workflows/publish.yml>`_.
+   2. Select **Run workflow**. In the new menu:
+
+      1. Select **Use workflow from** > **Tags** > new version number (e.g. 2020.4).
+      2. Set **PyPI instance for publishing** as *PyPI* (default) or *TestPyPI*. `More info <https://packaging.python.org/en/latest/guides/using-testpypi/>`_
+      3. Select **Run workflow**.
 
 .. _Sphinx theme: https://www.sphinx-doc.org/en/master/theming.html
 .. _Read The Docs: https://readthedocs.org
