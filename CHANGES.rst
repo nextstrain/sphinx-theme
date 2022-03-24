@@ -2,6 +2,11 @@
 Changelog
 =========
 
+2022.3 (24 March 2022)
+======================
+The version of the base theme, ``sphinx_rtd_theme``, has been updated to 1.0.0
+to support latest styling (`#19 <https://github.com/nextstrain/sphinx-theme/pull/19>`_).
+
 2022.2 (16 March 2022)
 ======================
 
