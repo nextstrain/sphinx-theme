@@ -52,12 +52,11 @@ provided by the theme.
 Releasing
 ---------
 
-1. Make sure you have a PyPI account and access to https://pypi.org/project/nextstrain-sphinx-theme/.
-2. Make sure all your changes have been commited to the ``main`` branch.
-3. Add a commit which describes the changes from the previous version to ``CHANGES.rst`` and updates the version number in ``lib/nextstrain/sphinx/theme/VERSION``.
-4. Tag this commit with the version number, e.g. ``git tag -a 2020.4 -m "version 2020.4"``.
-5. Push the commit and tag to GitHub, e.g. ``git push origin main 2020.4``.
-6. Publish to PyPI by invoking a GitHub Actions workflow:
+1. Make sure all your changes have been commited to the ``main`` branch.
+2. Add a commit which describes the changes from the previous version to ``CHANGES.rst`` and updates the version number in ``lib/nextstrain/sphinx/theme/VERSION``.
+3. Tag this commit with the version number, e.g. ``git tag -a 2020.4 -m "version 2020.4"``.
+4. Push the commit and tag to GitHub, e.g. ``git push origin main 2020.4``.
+5. Publish to PyPI by invoking a GitHub Actions workflow:
 
    1. Go to the workflow: `publish.yml <https://github.com/nextstrain/sphinx-theme/actions/workflows/publish.yml>`_.
    2. Select **Run workflow**. In the new menu:
