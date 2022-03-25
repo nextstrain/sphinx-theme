@@ -103,10 +103,6 @@ footer span.commit code,
   font-size: 1rem;
 }
 
-.wy-menu-vertical li ul li a {
-  font-weight: 300;
-}
-
 /* Remove sidebar TOC link colors, hover states, and borders */
 .wy-menu-vertical a {
   color: var(--text-color);
