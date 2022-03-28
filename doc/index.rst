@@ -16,6 +16,7 @@
     demo/demo
     demo/lists_tables
     demo/api
+    demo/nested/index
     External link <https://nextstrain.org>
 
 .. toctree::
