@@ -229,6 +229,14 @@ footer span.commit code,
 }
 
 
+/* Mobile nav (top bar heading + flyout menu icon)
+ */
+
+.wy-nav-top a, .wy-nav-top i {
+  color: var(--heading-color);
+}
+
+
 /* Footer styles. Largely chosen to mimic the previous rendering of the docs. See
 https://github.com/nextstrain/nextstrain.org/blob/b1e09e57e91ed0c9343e1cd3104877ec3c5344a4/static-site/src/components/Footer/index.jsx
 */
