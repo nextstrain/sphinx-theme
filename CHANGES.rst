@@ -2,6 +2,19 @@
 Changelog
 =========
 
+2022.4 (5 April 2022)
+=====================
+
+Navigation links which are at the second-level or deeper now use the normal
+font weight instead of a lighter font weight.  The intent is to make them more
+readable.
+
+The mobile navigation text and menu icon are now a readable color against the
+grey background, instead of white.
+
+Demo doc now includes pages nested in sub toctrees.
+
+
 2022.3 (24 March 2022)
 ======================
 The version of the base theme, ``sphinx_rtd_theme``, has been updated to 1.0.0
