@@ -15,3 +15,4 @@ with version_path.open(encoding = "utf-8") as version_file:
 
 def setup(app):
     app.add_html_theme('nextstrain-sphinx-theme', str(package_dir))
+    app.setup_extension('sphinx_copybutton')
