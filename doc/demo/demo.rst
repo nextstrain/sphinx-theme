@@ -197,6 +197,22 @@ Emphasized lines with line numbers
        print 'This one is not...'
        print '...but this one is.'
 
+Code block with shell prompts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Copy button should strip prompts and handle line continuations.
+
+.. code-block:: console
+
+    $ echo hello world | tr a-z A-Z
+    HELLO WORLD
+
+    $ curl https://nextstrain.org/flu/seasonal/h3n2/ha/2y                       \
+        --header 'Accept: application/vnd.nextstrain.dataset.main+json'         \
+        --compressed                                                            \
+            > flu_seasonal_h3n2_ha_2y.json
+    Downloading …
+
 Sidebar
 =======
 
