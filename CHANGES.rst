@@ -2,6 +2,15 @@
 Changelog
 =========
 
+2022.5 (27 April 2022)
+======================
+
+The ``sphinx-copybutton`` extension is installed to this package with some
+default configurations. For it to work properly, this package must be used as
+an extension in addition to usage as a theme (`#26 <https://github.com/nextstrain/sphinx-theme/pull/26>`_).
+
+Demo doc includes example usage.
+
 2022.4 (5 April 2022)
 =====================
 
