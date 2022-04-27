@@ -31,6 +31,7 @@ author = 'The Nextstrain Team'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'nextstrain.sphinx.theme',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

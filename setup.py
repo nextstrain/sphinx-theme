@@ -33,7 +33,8 @@ setup(
         ]
     },
     install_requires = [
-        'sphinx_rtd_theme >=1.0.0'
+        'sphinx_rtd_theme >=1.0.0',
+        'sphinx-copybutton'
     ],
     classifiers = [
         'Framework :: Sphinx',
