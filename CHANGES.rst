@@ -2,6 +2,15 @@
 Changelog
 =========
 
+2022.6 (11 July 2022)
+=====================
+
+The scroll-into-view behaviour for the current page's entry in the navigation
+sidebar is now a bit less jumpy.  Scrolling will be (mostly) avoided if the
+link is already in view, rather than always trying to scroll it to the top of
+the viewport. (`#27 <https://github.com/nextstrain/sphinx-theme/pull/27>`_)
+
+
 2022.5 (27 April 2022)
 ======================
 
