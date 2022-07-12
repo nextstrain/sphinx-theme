@@ -2,6 +2,15 @@
 Changelog
 =========
 
+2022.7 (12 July 2022)
+=====================
+
+The top-of-sidebar block containing the logo, project name, version, and search
+box is now pinned to the top of the sidebar when it scrolls.  This helps
+maintain the page's visual structure even if the sidebar navigation is long and
+requires scrolling.
+
+
 2022.6 (11 July 2022)
 =====================
 
