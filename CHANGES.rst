@@ -2,6 +2,16 @@
 Changelog
 =========
 
+2022.8 (18 July 2022)
+=====================
+
+A dependency on the Python distribution ``markdown <3.4.0`` was added to help
+resolve a compatibility issue with the ``sphinx-markdown-tables`` distribution,
+which we use in several of our projects.  Hopefully upstream will fix the issue
+with a new release and then this dependency can be removed.
+(`#29 <https://github.com/nextstrain/sphinx-theme/pull/29>`_)
+
+
 2022.7 (12 July 2022)
 =====================
 
