@@ -34,21 +34,7 @@ setup(
     },
     install_requires = [
         'sphinx_rtd_theme >=1.0.0',
-        'sphinx-copybutton',
-
-        # Many of our projects use sphinx-markdown-tables, which is
-        # incompatible with markdown 3.4.0 due to API changes.¹  Fix this with a
-        # single dep pin here instead of pins in all of those projects.  The
-        # upshot is that previously-broken stable builds of projects (e.g. past
-        # releases) can be fixed retroactively since when re-built from the
-        # same source they'll find this new theme dep.  The same wouldn't be
-        # true if we patched each repo individually.
-        #
-        # XXX TODO: Remove this once the compat issue¹ is resolved.
-        #   -trs, 18 July 2022
-        #
-        # ¹ https://github.com/ryanfox/sphinx-markdown-tables/issues/36
-        'markdown <3.4.0',
+        'sphinx-copybutton'
     ],
     classifiers = [
         'Framework :: Sphinx',
