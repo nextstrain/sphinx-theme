@@ -2,6 +2,14 @@
 Changelog
 =========
 
+2022.9 (25 July 2022)
+=====================
+
+Revert workaround for ``markdown`` and ``sphinx-markdown-tables`` from previous
+release.
+(`#31 <https://github.com/nextstrain/sphinx-theme/pull/31>`_)
+
+
 2022.8 (18 July 2022)
 =====================
 
