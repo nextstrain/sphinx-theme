@@ -49,6 +49,16 @@ to point to the image file in your Sphinx project.
 This will automatically take precedence over the default Nextstrain logo
 provided by the theme.
 
+Development
+-----------
+
+.. code:: bash
+
+    python3 -m pip install -e .
+    make clean # not always needed, but better to be cautious
+    make html
+    open build/html/index.html
+
 Releasing
 ---------
 
