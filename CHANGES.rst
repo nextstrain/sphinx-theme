@@ -2,6 +2,16 @@
 Changelog
 =========
 
+Update the team member list in the footer to match nextstrain.org's new footer.
+(`#37 <https://github.com/nextstrain/sphinx-theme/pull/37>`_)
+
+Fix the footer formatting when sphinx-rtd-theme 1.2.0 (or newer) is used.
+(`#36 <https://github.com/nextstrain/sphinx-theme/pull/36>`_)
+
+Document in the README how to develop the theme locally.
+(`#34 <https://github.com/nextstrain/sphinx-theme/pull/34>`_)
+
+
 2022.9 (25 July 2022)
 =====================
 
