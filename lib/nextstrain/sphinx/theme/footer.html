@@ -32,7 +32,7 @@
     {% macro TeamMember(name, image, link) %}
     <span>
       {% if link %}<a href="{{ link |e }}">{% endif %}
-        <img src="{{ pathto('_static/team/' + image, 1) }}" width="32"/>
+        <img src="https://raw.githubusercontent.com/nextstrain/nextstrain.org/HEAD/static-site/static/team/{{ image }}" width="32"/>
         {{ name |e }}
       {% if link %}</a>{% endif %}
     </span>
