@@ -2,6 +2,9 @@
 Changelog
 =========
 
+2023.1 (16 February 2023)
+=========================
+
 Update the team member list in the footer to match nextstrain.org's new footer.
 (`#37 <https://github.com/nextstrain/sphinx-theme/pull/37>`_)
 
