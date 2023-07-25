@@ -5,6 +5,12 @@ Changelog
 Unreleased
 ==========
 
+
+.. _v2023.2:
+
+2023.2 (25 July 2023)
+=====================
+
 The ``sphinx-better-subsection`` extension is installed and automatically set
 up to prefer explicit targets for a section heading over auto-generated targets
 (e.g. from the title) when producing HTML permalinks.  This change is backwards
