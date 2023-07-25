@@ -2,6 +2,19 @@
 Changelog
 =========
 
+Unreleased
+==========
+
+The ``sphinx-better-subsection`` extension is installed and automatically set
+up to prefer explicit targets for a section heading over auto-generated targets
+(e.g. from the title) when producing HTML permalinks.  This change is backwards
+compatible as both targets still work in both rST and HTML pages.  An example
+can be seen below for the `previous release heading <v2023.1_>`__.
+(`#38 <https://github.com/nextstrain/sphinx-theme/pull/38>`_)
+
+
+.. _v2023.1:
+
 2023.1 (16 February 2023)
 =========================
 
