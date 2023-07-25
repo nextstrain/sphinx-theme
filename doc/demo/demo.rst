@@ -308,6 +308,9 @@ This is a glossary with definition terms for thing like :term:`Writing`:
   Writing
      The process of putting thoughts into a medium for other people to :term:`read <Reading>`.
 
+
+.. _preferred:
+
 Targets
 -------
 
@@ -318,7 +321,8 @@ A reference can be found under `Inline Markup`_, above. `Inline
 hyperlink targets`_ are also possible.
 
 Section headers are implicit targets, referred to by name. See
-Targets_, which is a subsection of `Paragraph Level Markup`_.
+Targets_, which is a subsection of `Paragraph Level Markup`_. Explicit targets
+before a section heading are preferred_ when generating HTML permalinks.
 
 Explicit external targets are interpolated into references such as "Python_".
 
