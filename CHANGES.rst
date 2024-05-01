@@ -5,6 +5,27 @@ Changelog
 Unreleased
 ==========
 
+.. _v2024.1:
+
+2024.1 (1 May 2024)
+==================
+
+Add Kim and JohnA to footer
+(`#44 https://github.com/nextstrain/sphinx-theme/pull/44`_, `#47 https://github.com/nextstrain/sphinx-theme/pull/47)`_)`
+
+Bump actions/checkout from 2 to 4 (3 months ago) <dependabot[bot]>
+(`#42 https://github.com/nextstrain/sphinx-theme/pull/42`_)
+
+Bump actions/upload-artifact from 3 to 4 (3 months ago) <dependabot[bot]>
+(`#41 https://github.com/nextstrain/sphinx-theme/pull/41`_)
+
+Bump actions/setup-python from 2 to 5 (3 months ago) <dependabot[bot]>
+(`#40 https://github.com/nextstrain/sphinx-theme/pull/40`_)
+
+Automatically check for new GitHub actions versions
+
+Specify Read the Docs build OS
+(`#39 https://github.com/nextstrain/sphinx-theme/pull/39`_)
 
 .. _v2023.2:
 
