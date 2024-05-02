@@ -8,7 +8,7 @@ Unreleased
 .. _v2024.1:
 
 2024.1 (1 May 2024)
-==================
+===================
 
 Add Kim and JohnA to footer
 (`#44 https://github.com/nextstrain/sphinx-theme/pull/44`_, `#47 https://github.com/nextstrain/sphinx-theme/pull/47)`_)`
