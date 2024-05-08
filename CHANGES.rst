@@ -5,6 +5,14 @@ Changelog
 Unreleased
 ==========
 
+.. _v2024.2:
+
+2024.2 (8 May 2024)
+===================
+Remove unused large Fred Hutch logo
+Update small Fred Hutch logo in footer to current version
+(`#50 <https://github.com/nextstrain/sphinx-theme/pull/50>`_)
+
 .. _v2024.1:
 
 2024.1 (1 May 2024)
