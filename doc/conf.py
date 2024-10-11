@@ -48,3 +48,18 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'nextstrain-sphinx-theme'
+
+html_theme_options = {
+    'flyout_display': 'attached',
+}
+
+# -- Read the Docs configuration ---------------------------------------------
+
+# Define the canonical URL if you are using a custom domain on Read the Docs
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
+
+# Tell Jinja2 templates the build is running on Read the Docs
+if os.environ.get("READTHEDOCS", "") == "True":
+    if "html_context" not in globals():
+        html_context = {}
+    html_context["READTHEDOCS"] = True
