@@ -48,3 +48,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'nextstrain-sphinx-theme'
+
+html_theme_options = {
+    'flyout_display': 'attached',
+}
