@@ -5,6 +5,20 @@ Changelog
 Unreleased
 ==========
 
+.. _v2025.1:
+
+2025.1 (14 October 2025)
+===================
+
+Remove JohnA from core team list in footer
+(`#56 <https://github.com/nextstrain/sphinx-theme/pull/56>`_)
+
+Add explicit Sphinx configuration
+(`#53 <https://github.com/nextstrain/sphinx-theme/pull/53>`_)
+
+Allow BUILDDIR to be set from environment
+(`#52 <https://github.com/nextstrain/sphinx-theme/pull/52>`_)
+
 .. _v2024.2:
 
 2024.2 (8 May 2024)
