@@ -5,6 +5,14 @@ Changelog
 Unreleased
 ==========
 
+.. _v2025.2:
+
+2025.2 (21 November 2025)
+=========================
+
+Remove Tom from core team list in footer
+(`#58 <https://github.com/nextstrain/sphinx-theme/pull/58>`_)
+
 .. _v2025.1:
 
 2025.1 (14 October 2025)
