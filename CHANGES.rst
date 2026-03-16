@@ -5,6 +5,14 @@ Changelog
 Unreleased
 ==========
 
+.. _v2026.1:
+
+2026.1 (16 March 2026)
+======================
+
+Update core team members
+(`#62 <https://github.com/nextstrain/sphinx-theme/pull/62>`_)
+
 .. _v2025.2:
 
 2025.2 (21 November 2025)
